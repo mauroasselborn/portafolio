@@ -7,114 +7,94 @@
         <link rel="stylesheet" href="estilos.css" />
     </head>
     <body>
-        <header>
-            <h1>Portafolio de Mauro Asselborn</h1>
-        </header>
-
-        <!-- Menú -->
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#informacion">Información</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#redes">Redes</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
-        <main>
-            <!-- Presentación inicial con foto -->
-            <section id="inicio">
-                <div class="container">
-                    <h2>¡Hola! Soy Mauro</h2>
-                    <img src="foto.png" alt="Foto de perfil" />
-                    <p>Soy un desarrollador web apasionado por crear experiencias digitales.</p>
-                </div>
-            </section>
+        <header id="inicio" class="seccion">
+            <div class="container">
+                <img src="foto.png" alt="Foto de Perfil" class="foto-perfil" />
+                <h1 style="text-align: center">¡Hola! Soy MAURO ASSELBORN</h1>
+                <p class="descripcion">
+                    Apasionado por la creación de soluciones innovadoras y el aprendizaje continuo en el mundo de la tecnología.
+                </p>
+            </div>
+        </header>
 
-            <!-- Información general -->
-            <section id="informacion">
-                <div class="container">
-                    <h2>Información General</h2>
+        <section id="sobre-mi" class="seccion">
+            <div class="container">
+                <h2 class="titulo-seccion">Sobre mí</h2>
+                <p>
+                    Desarrollador web full stack, apasionado de la tecnología. Estudiante de Técnico Universitario en Programación
+                    en la UTN FRGP.
+                </p>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <div class="container">
+                <h2 class="titulo-seccion">Proyectos</h2>
+                <div class="proyecto">
+                    <h3>Sistema de Gestión de Tareas</h3>
                     <p>
-                        Soy un desarrollador web con experiencia en HTML, CSS, JavaScript, y frameworks como React y Vue.js. Me
-                        apasiona trabajar en proyectos desafiantes y aprender nuevas tecnologías.
+                        Una aplicación web para gestionar tareas de manera eficiente y colaborativa. Permite crear, asignar y
+                        seguir el progreso de las tareas.
                     </p>
+                    <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, Node.js, Express, MongoDB</p>
+                    <a href="#">Enlace al proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Plataforma de E-learning</h3>
                     <p>
-                        En mi tiempo libre, disfruto contribuir a proyectos de código abierto y compartir mis conocimientos en
-                        blogs y comunidades en línea.
+                        Una plataforma online para el aprendizaje interactivo. Ofrece cursos en línea, evaluaciones, y seguimiento
+                        del progreso del estudiante.
                     </p>
+                    <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, React.js, Redux, Firebase</p>
+                    <a href="#">Enlace al proyecto</a>
                 </div>
-            </section>
-
-            <!-- Conocimientos -->
-            <section id="conocimientos">
-                <div class="container">
-                    <h2>Conocimientos</h2>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3 y preprocessors (Sass, Less)</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Frameworks: React, Vue.js</li>
-                        <li>Responsive Web Design</li>
-                        <li>Control de versiones con Git</li>
-                    </ul>
+                <div class="proyecto">
+                    <h3>Aplicación de Gestión de Finanzas Personales</h3>
+                    <p>
+                        Una aplicación móvil para ayudar a las personas a administrar sus finanzas personales. Permite llevar un
+                        registro de gastos e ingresos, establecer presupuestos y recibir consejos financieros.
+                    </p>
+                    <p><strong>Tecnologías Utilizadas:</strong> React Native, Firebase</p>
+                    <a href="#">Enlace al proyecto</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Proyectos -->
-            <section id="proyectos">
-                <div class="container">
-                    <h2>Proyectos</h2>
-                    <div class="proyecto">
-                        <h3>Proyecto 1</h3>
-                        <p>Descripción del proyecto...</p>
-                        <a href="#">Ver proyecto</a>
-                    </div>
-                    <div class="proyecto">
-                        <h3>Proyecto 2</h3>
-                        <p>Descripción del proyecto...</p>
-                        <a href="#">Ver proyecto</a>
-                    </div>
-                    <!-- Agrega más proyectos aquí -->
+        <section id="conocimientos" class="seccion">
+            <div class="container">
+                <h2 class="titulo-seccion">Conocimientos</h2>
+                <ul>
+                    <li>Lenguajes de Programación: HTML, CSS, JavaScript, Python</li>
+                    <li>Frameworks: React, Angular, Django</li>
+                    <li>Diseño Gráfico: Adobe Photoshop, Illustrator, Figma</li>
+                    <li>Bases de Datos: MySQL, MongoDB</li>
+                    <li>Otros: SEO, Marketing Digital, UX/UI Design</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer id="contacto" class="seccion">
+            <div class="container">
+                <h2 class="titulo-seccion">Contacto</h2>
+                <div class="formulario-contacto">
+                    <input type="text" placeholder="Nombre" id="nombre" />
+                    <input type="email" placeholder="Email" id="email" />
+                    <textarea placeholder="Mensaje" id="mensaje"></textarea>
+                    <button onclick="enviarMensaje()">Enviar Mensaje</button>
                 </div>
-            </section>
-
-            <!-- Redes -->
-            <section id="redes">
-                <div class="container">
-                    <h2>Redes Sociales</h2>
-                    <ul>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Formulario de contacto -->
-            <section id="contacto">
-                <div class="container">
-                    <h2>Contacto</h2>
-                    <form id="contactForm">
-                        <input type="text" id="nombre" placeholder="Nombre" required />
-                        <input type="email" id="email" placeholder="Correo electrónico" required />
-                        <textarea id="mensaje" placeholder="Mensaje" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2024 Portafolio de [Tu Nombre]</p>
+            </div>
         </footer>
 
         <script src="func.js"></script>
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"
-        ></script>
     </body>
 </html>
